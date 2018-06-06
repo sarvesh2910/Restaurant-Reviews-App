@@ -62,8 +62,8 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 
 /* ====================== Navigation ====================== */
 nav {
-    height: 80px;
-    background-color: #252831;
+    height: auto;
+    /* background-color: #252831; */
     text-align: center;
     display: flex;
     flex-direction:  column;
@@ -72,7 +72,8 @@ nav {
 
 nav h1 {
     margin: auto;
-    /* width:  100%; */
+    width:  100%;
+    background-color:  #252831;
 }
 
 nav h1 a {
@@ -89,7 +90,7 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: 50%;
+    /* width: 50%; */
 }
 
 /* Display list items side by side */
@@ -317,9 +318,9 @@ nav h1 a {
     flex-direction: column;
 }
 
-#reviews-container h2 {
+#reviews-container h3 {
     color: #f58500;
-    font-size: 24pt;
+    font-size: 18pt;
     font-weight: 300;
     letter-spacing: -1px;
     padding-bottom: 1pt;
@@ -400,7 +401,7 @@ nav h1 a {
         width: 100%;
         position: initial;
         height:  400px;
-        margin-top: 131px;
+        margin-top: 81px;
     }
     #breadcrumb{
         width: 100%;
@@ -412,7 +413,4 @@ nav h1 a {
         width: 100%;
     }
 
-    nav h1{
-        width:100%;
-    }
 }

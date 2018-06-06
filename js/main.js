@@ -1,8 +1,8 @@
 let restaurants,
     neighborhoods,
     cuisines
-let map
-let markers = []
+var map
+var markers = []
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
@@ -144,7 +144,7 @@ createRestaurantHTML = (restaurant) => {
     image.alt = restaurant.name + 'Restaurant photo';
     li.append(image);
 
-    const name = document.createElement('h1');
+    const name = document.createElement('h2');
     name.innerHTML = restaurant.name;
     name.setAttribute('aria-label','Restaurant Name');
     li.append(name);

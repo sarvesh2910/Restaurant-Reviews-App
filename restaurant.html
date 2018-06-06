@@ -16,12 +16,13 @@
     <!-- Beginning nav -->
     <nav id="breadcrumb-nav" role="navigation" aria-label="Breadcrumb">
         <h1><a href="/">Restaurant Reviews</a></h1>
+        <!-- Beginning breadcrumb -->
+        <ul id="breadcrumb">
+            <li><a href="/">Home</a></li>
+        </ul>
+        <!-- End breadcrumb -->
     </nav>
-    <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb">
-        <li><a href="/">Home</a></li>
-    </ul>
-    <!-- End breadcrumb -->
+
     <!-- End nav -->
 </header>
 <!-- End header -->
@@ -67,5 +68,14 @@
 <!-- End scripts -->
 
 </body>
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').then(function () {
+            console.log('Service worker registered');
+        }).catch(function () {
+            console.log('Error');
+        })
 
+    }
+</script>
 </html>
